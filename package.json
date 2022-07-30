@@ -19,7 +19,10 @@
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
     "bootstrap": "^5.2.0",
+    "matcher": "^5.0.0",
+    "pattern": "^0.2.0",
     "rxjs": "~7.5.0",
+    "stringbuffer": "^1.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

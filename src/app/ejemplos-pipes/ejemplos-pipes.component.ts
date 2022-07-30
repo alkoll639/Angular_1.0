@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjemplosPipesComponent implements OnInit {
 
+
+  nombre:string="dieGo mauricio palaCioS";
+  PI:number=Math.PI;
+  porcentaje:number=0.25;
+  salario:number=1000000;
+  fecha:Date=new Date;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,1 +1,70 @@
-<p>ejemplos-pipes works!</p>
+<h1>Ejemplos-pipes works!</h1>
+<hr/>
+<div class="row">
+<div class="table">
+<thead class="thead-dark">
+<tr>
+    <th>Variable</th>
+    <th>Pipe</th>
+    <th>Resultados</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Mayuscula</td>
+        <td>{{nombre|uppercase}}</td>
+    </tr>
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Minuscula</td>
+        <td>{{nombre|lowercase}}</td>
+    </tr>
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Slice</td>
+        <td>{{nombre|slice:2}}</td>
+    </tr>
+    <tr>
+        <td>{{PI}}</td>
+        <td>Numero</td>
+        <td>{{PI|number:'2.1'}}</td>
+    </tr>
+    <tr>
+        <td>{{porcentaje}}</td>
+        <td>Porcentaje</td>
+        <td>{{porcentaje|percent}}</td>
+    </tr>
+    <tr>
+        <td>{{salario}}</td>
+        <td>Moneda</td>
+        <td>{{salario|currency:'EUR'}}</td>
+    </tr>
+    <tr>
+        <td>{{fecha}}</td>
+        <td>FechaLarga</td>
+        <td>{{fecha|date:'medium'}}</td>
+    </tr>
+    <tr>
+        <td>{{fecha}}</td>
+        <td>FechaCorta</td>
+        <td>{{fecha|date:'short'}}</td>
+    </tr>
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Pipes Personalizado</td>
+        <td>{{nombre|mayusculas}}</td>
+    </tr> 
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Pipes Contar Letras</td>
+        <td>{{nombre|numcaracter}}</td>
+    </tr> 
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Pipes Capitalizar</td>
+        <td>{{nombre|capitalizar}}</td>
+    </tr> 
+</tbody>
+</div>
+</div>    
