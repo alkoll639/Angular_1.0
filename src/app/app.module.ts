@@ -10,6 +10,13 @@ import { EjemplosPipesComponent } from './ejemplos-pipes/ejemplos-pipes.componen
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
 import { NumcaracterPipe } from './pipes/numcaracter.pipe';
 import { CapitalizarPipe } from './pipes/capitalizar.pipe';
+import { VisiblepasswordPipe } from './pipes/visiblepassword.pipe';
+import { LimitStringPipe } from './pipes/limit-string.pipe';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { FormularioNgmodelComponent } from './formularios/formulario-ngmodel/formulario-ngmodel.component';
+import { FormularioReactivoComponent } from './formularios/formulario-reactivo/formulario-reactivo.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 //Decorador funcion se ejecuta antes de iniciar una clase
 @NgModule({
@@ -22,13 +29,19 @@ import { CapitalizarPipe } from './pipes/capitalizar.pipe';
     EjemplosPipesComponent,
     MayusculasPipe,
     NumcaracterPipe,
-    CapitalizarPipe
-    
+    CapitalizarPipe,
+    VisiblepasswordPipe,
+    LimitStringPipe,
+    CapitalizePipe,
+    FormularioNgmodelComponent,
+    FormularioReactivoComponent,    
   ],
   imports: [
   //importar las librerias
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    FormsModule
   ],
   //declarar servicios
   providers: [],

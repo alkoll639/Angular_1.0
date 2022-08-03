@@ -62,9 +62,39 @@
     </tr> 
     <tr>
         <td>{{nombre}}</td>
+        <td>Pipes Puntos suspensivos Letras</td>
+        <td>{{nombre|limitString:5}}</td>
+    </tr> 
+    <tr>
+        <td>{{nombre}}</td>
         <td>Pipes Capitalizar</td>
         <td>{{nombre|capitalizar}}</td>
     </tr> 
+    <tr>
+        <td>{{nombre}}</td>
+        <td>Pipes Capitalizar_2.0 CleanCode</td>
+        <td>{{nombre|capitalize}}</td>
+    </tr> 
+    <tr>
+        <td>{{valorPromesa}}</td>
+        <td>Async</td>
+        <td>{{valorPromesa|async}}</td>
+    </tr> 
+    <tr>
+        <td>{{heroe}}</td>
+        <td>Json</td>
+        <pre><td>{{heroe|json}}</td></pre>
+    </tr> 
+    <tr>
+        <td>Promesa {{ valorPromesa }}</td>        
+        <td><button class="btn btn-danger" (click)="darClick()">Click</button></td>
+        <td>{{valorPromesa|async }}</td>
+    </tr>
+    <tr>
+        <td>Actividad Contraseña :{{isShow}}</td>      
+        <td><button  (click)="isShow=!isShow" class="btn btn-primary">Activar/Desactivar</button></td>       
+        <td><input type="text" value="{{nombre|visiblepassword:isShow}}"> </td>          
+    </tr>
 </tbody>
 </div>
 </div>    
