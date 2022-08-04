@@ -1,1 +1,63 @@
-<p>formulario-reactivo works!</p>
+<h4>formulario-reactivo</h4>
+<hr/>
+<form [formGroup]="form">
+<div class="row">
+    <div class="row form-group">
+        <label class="col-2" >Nombre</label>
+        <div class="col-8">
+        <input type="text" formControlName="nombre" class="form-control" name="nombre" />        
+        </div> 
+        <small *ngIf="usuarioNoValido" class="text-danger">            
+            Es requerido
+        </small>
+    </div>
+    <div class="row form-group mt-2">
+        <label class="col-2">Apellido</label>
+        <div class="col-8">
+        <input type="text" formControlName="apellido" class="form-control" name="apellido" />
+        </div>        
+    </div>
+    <div class="row form-group mt-2">
+        <label class="col-2">Email</label>
+        <div class="col-8">
+        <input type="text" formControlName="email" class="form-control" name="email" />
+        </div> 
+    </div>
+    <div class="row form-group mt-2">
+        <label class="col-2">Password</label>
+        <div class="col-8">
+        <input type="text" formControlName="pass" class="form-control" name="pass" />
+        </div> 
+    </div>
+    <div class="row form-group mt-2">
+        <label class="col-2">Paises</label>
+        <div class="col-8">
+        <select formControlName="pais">
+            <option selected>Seleccione</option>
+            <option value="1">Colombia</option>
+            <option value="2">Argentina</option>
+        </select>
+        </div> 
+    </div>    
+<div formGroupName="direccion">
+    <h1>Direccion</h1>
+    <div class="row form-group mt-2">
+        <label class="col-2">Calle</label>
+        <div class="col-8">
+        <input type="text" formControlName="calle" class="form-control" name="calle" />
+        </div> 
+    </div>
+    <div class="row form-group mt-2">
+        <label class="col-2">avenida</label>
+        <div class="col-8">
+        <input type="text" formControlName="avenida" class="form-control" name="avenida" />
+        </div> 
+    </div>
+</div>
+    <button class="btn btn-primary col-md-4 mx-auto mt-4 text" (click)="guardar()">Guardar</button>
+    <button class="btn btn-danger col-md-4 mx-auto mt-4 text" (click)="limpiar()">Reset</button>
+    <span>
+        <pre>Contraseña :{{getError("pass")|json}}</pre>
+    </span>
+</div>    
+</form>

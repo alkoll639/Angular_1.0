@@ -16,7 +16,7 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { FormularioNgmodelComponent } from './formularios/formulario-ngmodel/formulario-ngmodel.component';
 import { FormularioReactivoComponent } from './formularios/formulario-reactivo/formulario-reactivo.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Decorador funcion se ejecuta antes de iniciar una clase
 @NgModule({
@@ -41,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   //declarar servicios
   providers: [],
